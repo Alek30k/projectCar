@@ -4,8 +4,17 @@ import Image from "next/image";
 
 import React from "react";
 
-const CustomButton = () => {
-  return <div>CustomButton</div>;
+const CustomButton = ({ title }) => {
+  return (
+    <button
+      disabled={false}
+      type={"button"}
+      className={`custom-btn `}
+      onClick={() => {}}
+    >
+      <span className={`flex-1 `}>{title}</span>
+    </button>
+  );
 };
 
 export default CustomButton;
